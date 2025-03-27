@@ -131,6 +131,12 @@ const Home = () => {
       }
     };
 
+    const handleFetchDraft = async () => {
+      if (!currentUser) {
+        loadDrafts();
+      }
+    }
+
   
     useEffect(() => {
       const fetchSavedLetters = async () => {
@@ -308,6 +314,19 @@ const Home = () => {
         >
           Upload to Google Drive
         </button>
+        <button
+            onClick={handleFetchDraft}
+            style={{
+              padding: '8px 16px',
+              background: '#2196F3',
+              color: 'white',
+              border: 'none',
+              borderRadius: '4px',
+              cursor: 'pointer'
+            }}
+          >
+            Fetch Drafts
+          </button>
       </div>
 
       {message && (
