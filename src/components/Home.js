@@ -122,6 +122,7 @@ const Home = () => {
           setLetter('');
           setCurrentDraft(null);
           setTimeout(() => setMessage(''), 3000);
+          loadDrafts();
         }
       } catch (error) {
         console.error('Error uploading letter:', error);
