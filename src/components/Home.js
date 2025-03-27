@@ -344,7 +344,6 @@ const Home = () => {
               >
                 <div style={{
                   fontSize: '14px',
-                  color: '#666',
                   marginBottom: '10px',
                   color: 'black'
                 }}>

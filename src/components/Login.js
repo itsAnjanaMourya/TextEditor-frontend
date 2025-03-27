@@ -50,6 +50,7 @@ const Login = () => {
         try {
             const result = await signInWithPopup(auth, provider);
             setUser(result.user);
+            console.log(user)
             console.log("User logged in:", result.user);
             result.user && navigate("/home");
         } catch (error) {
